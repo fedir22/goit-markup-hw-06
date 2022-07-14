@@ -730,6 +730,9 @@ textarea:focus {
 
   padding: 16px 15px;
 }
+.footer-field {
+  display: flex;
+}
 .button-sumbit {
   display: inline-flex;
   font-weight: 700;
@@ -753,13 +756,11 @@ textarea:focus {
 .email:focus {
   outline: transparent;
 }
-.f-icon {
-  fill: #ffffff;
-}
-.f-submit {
+.f-sumbit {
   fill: #ffffff;
   margin-left: 10px;
 }
+
 /* ПОРТФОЛІО */
 
 /* Фільтр */
