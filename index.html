@@ -62,6 +62,49 @@
         </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
+            <form class="form-modal" autocomplete="on">
+              <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+              <ul class="form-modal-list list">
+                <li class="form-modal-item">
+                  <label class="form-modal-label" for="name">Имя</label>
+                  <input type="text" id="name" class="form-modal-imput" name="name" />
+                  <svg class="modal-icon" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-person"></use>
+                  </svg>
+                </li>
+                <li class="form-modal-item">
+                  <label class="form-modal-label" for="tel">Телефон</label>
+                  <input type="tel" id="tel" class="form-modal-imput" name="phone" required />
+                  <svg class="modal-icon" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                </li>
+                <li class="form-modal-item">
+                  <label class="form-modal-label" for="mail">Почта</label>
+                  <input type="email" id="mail" class="form-modal-imput" name="email" />
+                  <svg class="modal-icon" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-email"></use>
+                  </svg>
+                </li>
+                <li>
+                  <label class="form-modal-label" for="comment">Комментарий</label>
+                  <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+                </li>
+              </ul>
+              <label class="label">
+                <input class="checkbox" type="checkbox" name="checkbox" required />
+                <span class="checkbox-icon">
+                  <svg width="11" height="8">
+                    <use href="./images/icons.svg#icon-icon-check"></use>
+                  </svg>
+                </span>
+                <span class="checkbox-text">
+                  Соглашаюсь с рассылкой и принимаю
+                  <a class="policity" href="">Условия договора</a>
+                </span>
+              </label>
+              <button class="btn-sumbit" type="submit">Отправить</button>
+            </form>
             <button data-modal-close class="modal-btn">
               <svg width="18px" height="18px">
                 <use href="./images/icons.svg#icon-close"></use>
@@ -419,6 +462,16 @@
             </li>
           </ul>
         </div>
+        <form class="footer-label">
+          <label class="label-title">Подпишитесь на рассылку</label>
+          <input class="email" type="email" name="email" placeholder="E-mail" />
+          <button class="button-sumbit" type="submit">
+            Подписаться
+            <svg class="f-sumbit" width="24" height="24">
+              <use href="./images/icons.svg#icon-telegram"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
